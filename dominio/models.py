@@ -89,4 +89,15 @@ class ZonaResidencial(Base):
         verbose_name = _('Zona Residencial')
         verbose_name_plural = _('Zona Residencial')
         ordering = ['nome']
-        
+
+
+class AnoConclusao(models.Model):
+    label = 'Ano'
+    ano = models.IntegerField(_(label), null=False)
+
+    def __str__(self):
+        return str(self.ano)
+
+    class Meta:
+        verbose_name = _('Ano Conclusão')
+        verbose_name_plural = _('Ano Conclusão')
