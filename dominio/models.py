@@ -75,3 +75,10 @@ class OrgaoEmissor(Base):
         verbose_name = _('Órgão Emissor')
         verbose_name_plural = _('Órgão Emissor')
         ordering = ['nome']
+
+
+class TipoCertidao(Base):
+    class Meta:
+        verbose_name = _('Tipo de Certidão')
+        verbose_name_plural = _('Tipo de Certidão')
+        ordering = ['nome']
