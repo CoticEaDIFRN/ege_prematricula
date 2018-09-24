@@ -62,3 +62,9 @@ class UnidadeFederativa(Base):
         verbose_name_plural = _('Unidade Federativa')
         ordering = ['nome']
 
+
+class PaisOrigem(Base):
+    class Meta:
+        verbose_name = _('Pais de Origem')
+        verbose_name_plural = _('Pais de Origem')
+        ordering = ['nome']
