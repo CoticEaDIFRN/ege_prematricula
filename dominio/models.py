@@ -68,3 +68,10 @@ class PaisOrigem(Base):
         verbose_name = _('Pais de Origem')
         verbose_name_plural = _('Pais de Origem')
         ordering = ['nome']
+
+
+class OrgaoEmissor(Base):
+    class Meta:
+        verbose_name = _('Órgão Emissor')
+        verbose_name_plural = _('Órgão Emissor')
+        ordering = ['nome']
