@@ -16,7 +16,6 @@ class Base(models.Model):
 
 
 class Sexo(Base):
-
     class Meta:
         verbose_name = _('Sexo')
         verbose_name_plural = _('Sexo')
@@ -24,8 +23,14 @@ class Sexo(Base):
 
 
 class EstadoCivil(Base):
-
     class Meta:
         verbose_name = _('Estado Civil')
         verbose_name_plural = _('Estado Civil')
+        ordering = ['nome']
+
+
+class Raca(Base):
+    class Meta:
+        verbose_name = _('Raça')
+        verbose_name_plural = _('Raça')
         ordering = ['nome']
