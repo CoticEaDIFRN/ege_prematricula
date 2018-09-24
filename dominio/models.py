@@ -41,3 +41,9 @@ class TipoSanguineo(Base):
         verbose_name = _('Tipo Sanguíneo')
         verbose_name_plural = _('Tipo Sanguíneo')
         ordering = ['nome']
+
+class TipoInstituicao(Base):
+    class Meta:
+        verbose_name = _('Tipo de Instituição')
+        verbose_name_plural = _('Tipo de Instituição')
+        ordering = ['nome']
