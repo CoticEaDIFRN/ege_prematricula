@@ -47,3 +47,10 @@ class TipoInstituicao(Base):
         verbose_name = _('Tipo de Instituição')
         verbose_name_plural = _('Tipo de Instituição')
         ordering = ['nome']
+
+
+class NivelEnsino(Base):
+    class Meta:
+        verbose_name = _('Nível de Ensino')
+        verbose_name_plural = _('Nível de Ensino')
+        ordering = ['nome']
