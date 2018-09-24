@@ -10,6 +10,7 @@ from .models import UnidadeFederativa
 from .models import PaisOrigem
 from .models import OrgaoEmissor
 from .models import TipoCertidao
+from .models import ZonaResidencial
 
 admin.site.register(Sexo)
 admin.site.register(EstadoCivil)
@@ -21,3 +22,5 @@ admin.site.register(UnidadeFederativa)
 admin.site.register(PaisOrigem)
 admin.site.register(OrgaoEmissor)
 admin.site.register(TipoCertidao)
+admin.site.register(ZonaResidencial)
+

@@ -82,3 +82,11 @@ class TipoCertidao(Base):
         verbose_name = _('Tipo de Certidão')
         verbose_name_plural = _('Tipo de Certidão')
         ordering = ['nome']
+
+
+class ZonaResidencial(Base):
+    class Meta:
+        verbose_name = _('Zona Residencial')
+        verbose_name_plural = _('Zona Residencial')
+        ordering = ['nome']
+        
