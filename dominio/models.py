@@ -34,3 +34,10 @@ class Raca(Base):
         verbose_name = _('Raça')
         verbose_name_plural = _('Raça')
         ordering = ['nome']
+
+
+class TipoSanguineo(Base):
+    class Meta:
+        verbose_name = _('Tipo Sanguíneo')
+        verbose_name_plural = _('Tipo Sanguíneo')
+        ordering = ['nome']
