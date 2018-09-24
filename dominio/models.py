@@ -21,3 +21,11 @@ class Sexo(Base):
         verbose_name = _('Sexo')
         verbose_name_plural = _('Sexo')
         ordering = ['nome']
+
+
+class EstadoCivil(Base):
+
+    class Meta:
+        verbose_name = _('Estado Civil')
+        verbose_name_plural = _('Estado Civil')
+        ordering = ['nome']
