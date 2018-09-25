@@ -95,3 +95,10 @@ class TipoDocumento(Base):
         verbose_name = _('Tipo de Documento')
         verbose_name_plural = _('Tipos de Documentos')
         ordering = ['nome']
+
+
+class Polo(Base):
+    class Meta:
+        verbose_name = _('Polo')
+        verbose_name_plural = _('Polos')
+        ordering = ['nome']
