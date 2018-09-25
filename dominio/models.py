@@ -101,3 +101,9 @@ class AnoConclusao(models.Model):
     class Meta:
         verbose_name = _('Ano Conclusão')
         verbose_name_plural = _('Ano Conclusão')
+
+class TipoDocumento(Base):
+    class Meta:
+        verbose_name = _('Tipo do Documento')
+        verbose_name_plural = _('Tipo do Documento')
+        ordering = ['nome']
