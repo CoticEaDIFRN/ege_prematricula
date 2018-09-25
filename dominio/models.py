@@ -43,57 +43,57 @@ class TipoSanguineo(Base):
 
 class TipoInstituicao(Base):
     class Meta:
-        verbose_name = _('Tipo de Instituição')
-        verbose_name_plural = _('Tipos de Instituições')
+        verbose_name = _('Tipo de instituição')
+        verbose_name_plural = _('Tipos de instituições')
         ordering = ['nome']
 
 
 class NivelEnsino(Base):
     class Meta:
-        verbose_name = _('Nível de Ensino')
-        verbose_name_plural = _('Níveis de Ensino')
+        verbose_name = _('Nível de ensino')
+        verbose_name_plural = _('Níveis de ensino')
         ordering = ['nome']
   
   
 class UnidadeFederativa(Base):
     class Meta:
-        verbose_name = _('Unidade Federativa')
-        verbose_name_plural = _('Unidades Federativas')
+        verbose_name = _('Unidade federativa')
+        verbose_name_plural = _('Unidades federativas')
         ordering = ['nome']
 
 
 class PaisOrigem(Base):
     class Meta:
-        verbose_name = _('Pais de Origem')
-        verbose_name_plural = _('Paises de Origem')
+        verbose_name = _('Pais de origem')
+        verbose_name_plural = _('Paises de origem')
         ordering = ['nome']
 
 
 class OrgaoEmissor(Base):
     class Meta:
-        verbose_name = _('Órgão Emissor')
-        verbose_name_plural = _('Órgãos Emissores')
+        verbose_name = _('Órgão emissor')
+        verbose_name_plural = _('Órgãos emissores')
         ordering = ['nome']
 
 
 class TipoCertidao(Base):
     class Meta:
-        verbose_name = _('Tipo de Certidão')
-        verbose_name_plural = _('Tipos de Certidões')
+        verbose_name = _('Tipo de certidão')
+        verbose_name_plural = _('Tipos de certidões')
         ordering = ['nome']
 
 
 class ZonaResidencial(Base):
     class Meta:
-        verbose_name = _('Zona Residencial')
-        verbose_name_plural = _('Zonas Residenciais')
+        verbose_name = _('Zona residencial')
+        verbose_name_plural = _('Zonas residenciais')
         ordering = ['nome']
 
 
 class TipoDocumento(Base):
     class Meta:
-        verbose_name = _('Tipo de Documento')
-        verbose_name_plural = _('Tipos de Documentos')
+        verbose_name = _('Tipo de documento')
+        verbose_name_plural = _('Tipos de documentos')
         ordering = ['nome']
 
 
@@ -106,8 +106,8 @@ class Convenio(Base):
 
 class FormaIngresso(Base):
     class Meta:
-        verbose_name = _('Forma de Ingresso')
-        verbose_name_plural = _('Formas de Ingresso')
+        verbose_name = _('Forma de ingresso')
+        verbose_name_plural = _('Formas de ingresso')
 
 
 class Polo(Base):
