@@ -109,3 +109,4 @@ class Turno(Base):
         verbose_name = _('Turno')
         verbose_name_plural = _('Turnos')
         ordering = ['nome']
+
