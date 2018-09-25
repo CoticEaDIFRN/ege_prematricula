@@ -96,18 +96,19 @@ class TipoDocumento(Base):
         verbose_name_plural = _('Tipos de Documentos')
         ordering = ['nome']
 
-<<<<<<< HEAD
+
 class Convenio(Base):
     class Meta:
         verbose_name = _('Convênio')
         verbose_name_plural = _('Convênios')
         ordering = ['nome']
 
+
 class FormaIngresso(Base):
     class Meta:
         verbose_name = _('Forma de Ingresso')
         verbose_name_plural = _('Formas de Ingresso')
-=======
+
 
 class Polo(Base):
     class Meta:
@@ -120,5 +121,4 @@ class Turno(Base):
     class Meta:
         verbose_name = _('Turno')
         verbose_name_plural = _('Turnos')
->>>>>>> 593e8cd1dbab88db1c409458203a260feb89bde2
         ordering = ['nome']
