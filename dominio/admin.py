@@ -12,6 +12,8 @@ from .models import OrgaoEmissor
 from .models import TipoCertidao
 from .models import ZonaResidencial
 from .models import TipoDocumento
+from .models import Convenio
+from .models import FormaIngresso
 from .models import Polo
 from .models import Turno
 
@@ -27,5 +29,7 @@ admin.site.register(OrgaoEmissor)
 admin.site.register(TipoCertidao)
 admin.site.register(ZonaResidencial)
 admin.site.register(TipoDocumento)
+admin.site.register(Convenio)
+admin.site.register(FormaIngresso)
 admin.site.register(Polo)
 admin.site.register(Turno)
