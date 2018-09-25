@@ -11,6 +11,7 @@ from .models import PaisOrigem
 from .models import OrgaoEmissor
 from .models import TipoCertidao
 from .models import ZonaResidencial
+from .models import TipoDocumento
 
 admin.site.register(Sexo)
 admin.site.register(EstadoCivil)
@@ -23,4 +24,4 @@ admin.site.register(PaisOrigem)
 admin.site.register(OrgaoEmissor)
 admin.site.register(TipoCertidao)
 admin.site.register(ZonaResidencial)
-
+admin.site.register(TipoDocumento)

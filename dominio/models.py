@@ -89,3 +89,9 @@ class ZonaResidencial(Base):
         verbose_name_plural = _('Zonas Residenciais')
         ordering = ['nome']
 
+
+class TipoDocumento(Base):
+    class Meta:
+        verbose_name = _('Tipo de Documento')
+        verbose_name_plural = _('Tipos de Documentos')
+        ordering = ['nome']
