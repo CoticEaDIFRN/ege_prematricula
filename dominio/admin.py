@@ -13,6 +13,7 @@ from .models import TipoCertidao
 from .models import ZonaResidencial
 from .models import TipoDocumento
 from .models import Polo
+from .models import Turno
 
 admin.site.register(Sexo)
 admin.site.register(EstadoCivil)
@@ -27,3 +28,4 @@ admin.site.register(TipoCertidao)
 admin.site.register(ZonaResidencial)
 admin.site.register(TipoDocumento)
 admin.site.register(Polo)
+admin.site.register(Turno)

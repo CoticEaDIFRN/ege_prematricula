@@ -102,3 +102,10 @@ class Polo(Base):
         verbose_name = _('Polo')
         verbose_name_plural = _('Polos')
         ordering = ['nome']
+
+
+class Turno(Base):
+    class Meta:
+        verbose_name = _('Turno')
+        verbose_name_plural = _('Turnos')
+        ordering = ['nome']
