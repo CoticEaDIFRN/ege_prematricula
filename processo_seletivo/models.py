@@ -13,6 +13,7 @@ class ProcessoSeletivo(models.Model):
     turno = models.ForeignKey('dominio.Turno', on_delete=models.CASCADE)
     forma_ingresso = models.ForeignKey('dominio.FormaIngresso', on_delete=models.CASCADE)
     polo = models.ForeignKey('dominio.Polo', on_delete=models.CASCADE)
+    convenio = models.ForeignKey('dominio.Convenio', on_delete=models.CASCADE,null=True, blank=True)
     conclusao_intercambio = models.DateField(_('Conclusão do intercâmbio'), auto_now=False, auto_now_add=False)
     matriz_curso = models.CharField(_('Matriz/Curso'), max_length=256)
     linha_pesquisa = models.CharField(_('Linha de pesquisa'), max_length=256)
