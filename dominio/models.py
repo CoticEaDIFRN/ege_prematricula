@@ -108,6 +108,7 @@ class FormaIngresso(Base):
     class Meta:
         verbose_name = _('Forma de ingresso')
         verbose_name_plural = _('Formas de ingresso')
+        ordering = ['nome']
 
 
 class Polo(Base):
@@ -123,3 +124,16 @@ class Turno(Base):
         verbose_name_plural = _('Turnos')
         ordering = ['nome']
 
+
+class Campus(Base):
+    class Meta:
+        verbose_name = _('Campus')
+        verbose_name_plural = _('Campi')
+        ordering = ['nome']
+
+
+class Curso(Base):
+    class Meta:
+        verbose_name = _('Curso')
+        verbose_name_plural = _('Cursos')
+        ordering = ['nome']

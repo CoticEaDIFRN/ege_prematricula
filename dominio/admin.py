@@ -16,6 +16,8 @@ from .models import Convenio
 from .models import FormaIngresso
 from .models import Polo
 from .models import Turno
+from .models import Campus
+from .models import Curso
 
 admin.site.register(Sexo)
 admin.site.register(EstadoCivil)
@@ -33,3 +35,5 @@ admin.site.register(Convenio)
 admin.site.register(FormaIngresso)
 admin.site.register(Polo)
 admin.site.register(Turno)
+admin.site.register(Campus)
+admin.site.register(Curso)
