@@ -4,10 +4,9 @@ from django.utils.translation import gettext_lazy as _
 
 class ProcessoSeletivo(models.Model):
     PERIODO = (
-        (1, '1'),
-        (2, '2'),
+        (1, '1º Período'),
+        (2, '2º Período'),
     )
-
     identificacao = models.CharField(_('Identificação'), max_length=256)
     ano_letivo = models.PositiveIntegerField(_('Ano letivo'))
     periodo_letivo = models.PositiveIntegerField(_('Período letivo'), choices=PERIODO)
