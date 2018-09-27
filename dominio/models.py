@@ -64,15 +64,15 @@ class UnidadeFederativa(Base):
 
 class PaisOrigem(Base):
     class Meta:
-        verbose_name = _('Pais de origem')
-        verbose_name_plural = _('Paises de origem')
+        verbose_name = _('País de origem')
+        verbose_name_plural = _('Países de origens')
         ordering = ['nome']
 
 
 class OrgaoEmissor(Base):
     class Meta:
-        verbose_name = _('Órgão emissor')
-        verbose_name_plural = _('Órgãos emissores')
+        verbose_name = _('Orgão emissor')
+        verbose_name_plural = _('Orgãos emissores')
         ordering = ['nome']
 
 

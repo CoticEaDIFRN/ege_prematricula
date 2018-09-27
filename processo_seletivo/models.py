@@ -60,8 +60,20 @@ class Arquivo(models.Model):
 
 class Selecionado(models.Model):
     estado_civil = models.ForeignKey('dominio.EstadoCivil', on_delete=models.CASCADE,null=True, blank=True)
-    # forma_ingresso = models.ForeignKey('dominio.FormaIngresso', on_delete=models.CASCADE)
-    # convenio = models.ForeignKey('dominio.Convenio', on_delete=models.CASCADE,null=True, blank=True)
+    cpf = models.CharField('CPF', max_length=11, unique=True, null=True, blank=True)
+    forma_ingresso = models.ForeignKey('dominio.FormaIngresso', on_delete=models.CASCADE)
+    convenio = models.ForeignKey('dominio.Convenio', on_delete=models.CASCADE,null=True, blank=True)
+    foto = models.FileField('Arquivo de importação', unique=True, null=True, blank=True)
+    nome = models.CharField('Nome', max_length=200, unique=True, null=True, blank=True)
+    nome_social = models.CharField('Nome social', max_length=200, unique=True, null=True, blank=True)
+    sexo = models.ForeignKey('dominio.sexo', on_delete=models.CASCADE, null=True, blank=True)
+    data_nascimento = models.DateField('Data de nascimento')
+    nome_pai = models.CharField('Nome do pai', max_length=200, unique=True, null=True, blank=True)
+    pai_falecido = models.CharField('Pai falecido?', max_length=200, unique=True, null=True, blank=True)
+    nome_mae = models.CharField('Nome da mãe', max_length=200, unique=True, null=True, blank=True)
+    nome_resp = models.CharField('Nome do responsável', max_length=200, unique=True, null=True, blank=True)
+    email_resp = models.EmailField('E-mail do responsável', max_length=50, unique=True, null=True, blank=True)
+
     # conclusao_intercambio = models.DateField(_('Conclusão do intercâmbio'), auto_now=False, auto_now_add=False)
     # matriz_curso = models.CharField(_('Matriz/Curso'), max_length=256)
     # linha_pesquisa = models.CharField(_('Linha de pesquisa'), max_length=256)
