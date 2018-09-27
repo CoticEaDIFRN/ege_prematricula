@@ -7,12 +7,12 @@ class ProcessoSeletivo(models.Model):
         (1, '1º Período'),
         (2, '2º Período'),
     )
-    identificacao = models.CharField(_('Identificação'), max_length=256)
-    uo = models.CharField(_('Unidade organizacional'),  max_length=100)
-    numero_ano = models.CharField(_('Número / Ano'),  max_length=100)
-    ano_letivo = models.PositiveIntegerField(_('Ano letivo'))
+    identificacao = models.CharField(_('Identificação'), max_length=256, help_text='Digite sua identificação')
+    uo = models.CharField(_('Unidade organizacional'),  max_length=100, help_text='Digite a unidade organizacional')
+    numero_ano = models.CharField(_('Número / Ano'),  max_length=100, help_text='Digite o número e o ano do edital')
+    ano_letivo = models.PositiveIntegerField(_('Ano letivo'), help_text='Digite o ano')
     periodo_letivo = models.PositiveIntegerField(_('Período letivo'), choices=PERIODO)
-    url = models.URLField(_('Endereço do edital'),  max_length=300)
+    url = models.URLField(_('Endereço do edital'),  max_length=300, help_text='Informe o LINK onde está o edital')
     descricao = models.TextField(_('Descrição'), max_length=2000, null=True, blank=True)
 
     # forma_ingresso = models.ForeignKey('dominio.FormaIngresso', on_delete=models.CASCADE)
@@ -35,7 +35,7 @@ class ProcessoSeletivo(models.Model):
 
 
 class Oferta(models.Model):
-    nome = models.CharField(_('Nome'), max_length=256)
+    nome = models.CharField(_('Nome'), max_length=256, help_text='Digite o nome do processo seletivo')
     processo_seletivo = models.ForeignKey(ProcessoSeletivo, on_delete=models.CASCADE)
     campus = models.ForeignKey('dominio.Campus', on_delete=models.CASCADE)
     polo = models.ForeignKey('dominio.Polo', on_delete=models.CASCADE)
